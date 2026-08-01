@@ -1,0 +1,15 @@
+generated: '2026-07-20'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.retailsolutions.com
+  https: false
+domains:
+- domain: retailsolutions.com
+  dnssec: false
+  caa:
+  - 0 iodef "mailto:infosecalerts@circana.com"
+  - 0 issue "digicert.com"
+  - 0 issuewild "digicert.com"
+  spf: true
+  dmarc: false

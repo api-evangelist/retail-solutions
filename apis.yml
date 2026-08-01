@@ -1,4 +1,16 @@
 aid: retail-solutions
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/retail-solutions.png
 name: Retail Solutions
 description: 'Retail Solutions is a company surfaced as a portfolio company of bessemer-venture-partners
   and added to the API Evangelist network as a stub for enrichment. Sector: cloud. This profile is a lead
@@ -12,10 +24,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Cloud
+- Retail
+x-note: >-
+  Enrichment probe (2026-07-20) found retailsolutions.com administered by Circana
+  (CAA iodef record mailto:infosecalerts@circana.com; Circana is the IRI/NPD group
+  that absorbed Retail Solutions Inc / RSi). The host rejects TLS handshakes from
+  standard clients (https:false), publishes no reachable well-known paths, docs, or
+  API surface, and is not present in the APIs.io catalog. No API artifacts could be
+  discovered; only a live domain-security probe yielded data.
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +43,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/retail-solutions-domain-security.yml
 - type: Website
   url: https://www.retailsolutions.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
